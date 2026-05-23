@@ -1,0 +1,245 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(
+        180deg,
+        #E8D4C2,
+        #D7B89E
+    );
+
+    overflow-x:hidden;
+    min-height:100vh;
+}
+
+.container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    width:800px;
+    max-width:100%;
+
+    margin:auto;
+    padding:30px 20px;
+}
+
+h3,
+p{
+    font-family:"Belleza", Arial, sans-serif;
+    color:#3B2416;
+}
+
+h3{
+    font-size:38px;
+    margin:20px 0;
+    letter-spacing:2px;
+}
+
+p{
+    font-size:24px;
+    margin:10px 0;
+}
+
+img{
+    width:140px;
+    height:auto;
+
+    margin:15px 0;
+
+    border-radius:50%;
+    box-shadow:0 6px 15px rgba(0,0,0,.2);
+}
+
+form{
+    font-family:"Codec Pro", Arial, sans-serif;
+    color:#3B2416;
+
+    width:320px;
+    max-width:100%;
+
+    margin-top:30px;
+
+    padding:25px;
+
+    background:rgba(255,255,255,.2);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:20px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.15);
+
+}
+
+.form-container .input{
+    margin-bottom:25px;
+}
+
+.input label{
+    display:block;
+    text-align:left;
+
+    margin-bottom:8px;
+
+    font-size:15px;
+    font-weight:bold;
+}
+
+.input input,
+.input select{
+
+    width:100%;
+    height:48px;
+
+    border:2px solid #4A2C1D;
+    border-radius:12px;
+
+    background:#F4E7DA;
+
+    padding:0 15px;
+
+    font-size:15px;
+    color:#3B2416;
+
+    outline:none;
+
+    font-family:"Belleza",sans-serif;
+
+    transition:.3s;
+}
+
+.input input:focus,
+.input select:focus{
+
+    border-color:#8B5E3C;
+
+    box-shadow:
+    0 0 10px rgba(139,94,60,.4);
+}
+
+button{
+
+    width:100%;
+
+    font-family:"Belleza",sans-serif;
+
+    background:#4A2C1D;
+    color:#F5E6D3;
+
+    border:none;
+    border-radius:12px;
+
+    padding:15px;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.4s;
+}
+
+button:hover{
+
+    background:#6F4A36;
+
+    transform:
+    translateY(-3px);
+
+    box-shadow:
+    0 8px 15px rgba(0,0,0,.2);
+}
+
+.insta-btn{
+
+    width:100%;
+
+    margin-top:15px;
+    padding:12px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    background:#4A2C1D;
+    color:#F5E6D3;
+
+    border-radius:12px;
+
+    text-decoration:none;
+
+    font-family:"Belleza",sans-serif;
+
+    animation:pulsar 2s infinite;
+
+    transition:.3s;
+}
+
+.insta-btn:hover{
+
+    background:#6F4A36;
+
+    transform:scale(1.04);
+}
+
+.obs-servico{
+
+    margin-top:10px;
+
+    font-size:13px;
+
+    text-align:center;
+
+    color:#6F4A36;
+
+    font-style:italic;
+}
+
+@keyframes pulsar{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.04);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+}
+
+@media(max-width:900px){
+
+.container{
+
+padding:20px;
+}
+
+form{
+
+width:100%;
+}
+
+h3{
+
+font-size:30px;
+}
+
+p{
+
+font-size:20px;
+}
+
+}
